@@ -1,5 +1,4 @@
 
-
 document.getElementById('phone-Plus').addEventListener('click', ()=>{
   const phonePlus = document.getElementById('plus-number');
   const phonePlusValueString = phonePlus.value
@@ -14,7 +13,10 @@ document.getElementById('phone-Plus').addEventListener('click', ()=>{
 
      phoneMOney.innerText = 1219 * newPhonePlusValue;
 
-   setValue('subTotal')
+   setValue('subTotal');
+   const textId = document.getElementById('taxTotal');
+   textId.innerText = setText()
+    setTotal()
 
 });
 document.getElementById('phone-minus').addEventListener('click', ()=>{
@@ -34,7 +36,10 @@ document.getElementById('phone-minus').addEventListener('click', ()=>{
 //   const phoneMoneyOrginal = parseFloat(phoneMOneyString);
 
      phoneMOney.innerText = 1219 * newPhoneMinusValue;
-     setValue('subTotal')
+     setValue('subTotal');
+     const textId = document.getElementById('taxTotal');
+   textId.innerText = setText();
+   setTotal()
 });
 document.getElementById('case-plus').addEventListener('click', ()=>{
     const casePlus = document.getElementById('case-input');
@@ -49,7 +54,10 @@ document.getElementById('case-plus').addEventListener('click', ()=>{
   //   const phoneMoneyOrginal = parseFloat(phoneMOneyString);
   
        caseMOney.innerText = 59 * newCaseValue;
-       setValue('subTotal')
+       setValue('subTotal');
+       const textId = document.getElementById('taxTotal');
+   textId.innerText = setText()
+   setTotal()
   
   });
   document.getElementById('case-minus').addEventListener('click', ()=>{
@@ -69,7 +77,15 @@ document.getElementById('case-plus').addEventListener('click', ()=>{
   //   const phoneMoneyOrginal = parseFloat(phoneMOneyString);
   
        caseMOney.innerText = 59 * newCaseMinusValue;
-       setValue('subTotal')
+       setValue('subTotal');
+       const textId = document.getElementById('taxTotal');
+       textId.innerText = setText();
+
+       
+       setTotal()
+      
+      
+
   });
 
   
